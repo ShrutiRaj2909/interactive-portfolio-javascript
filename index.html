@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Raj | Interactive Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <h1>Shruti Raj</h1>
+            <p>Aspiring Software Developer</p>
+        </div>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- Dark Mode Button -->
+
+        <button id="darkModeBtn" class="toggle-btn">
+            🌙 Dark Mode
+        </button>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- About Section -->
+
+        <section id="about" class="container">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <img src="image.jpg"
+                    alt="Shruti Raj">
+
+                <div>
+
+                    <p>
+
+                        Hello! I am
+                        <strong>Shruti Raj</strong>,
+                        an aspiring Software Developer passionate about creating modern,
+                        responsive and interactive websites.
+
+                    </p>
+
+                    <p>
+
+                        This portfolio demonstrates HTML, CSS and JavaScript concepts
+                        including DOM manipulation, form validation and interactive features.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+
+        <section id="skills" class="container">
+
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="card">HTML5</div>
+                <div class="card">CSS3</div>
+                <div class="card">JavaScript</div>
+                <div class="card">Java</div>
+                <div class="card">SQL</div>
+                <div class="card">Git</div>
+                <div class="card">GitHub</div>
+                <div class="card">VS Code</div>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+
+        <section id="projects" class="container">
+
+            <h2>Projects</h2>
+
+            <div class="project-container">
+
+                <div class="project-card">
+
+                    <h3>Student Management System</h3>
+
+                    <p>
+
+                        Java application for managing student records using CRUD operations.
+
+                    </p>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3>Interactive Portfolio Website</h3>
+
+                    <p>
+
+                        Responsive website developed using HTML, CSS and JavaScript
+                        with dark mode, form validation and dynamic interactions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Quote Section (DOM Manipulation) -->
+
+        <section class="container">
+
+            <h2>Daily Motivation</h2>
+
+            <p id="quote">
+
+                Click the button below to generate a motivational quote.
+
+            </p>
+
+            <button id="quoteBtn" class="btn">
+
+                Generate Quote
+
+            </button>
+
+        </section>
+
+        <!-- Contact -->
+
+        <section id="contact" class="container">
+
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name">
+
+                <small id="nameError" class="error"></small>
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email">
+
+                <small id="emailError" class="error"></small>
+
+                <label>Message</label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Enter your message"></textarea>
+
+                <small id="messageError" class="error"></small>
+
+                <button type="submit" class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+            <p id="successMessage"></p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Shruti Raj | Interactive Portfolio Website
+
+        </p>
+
+    </footer>
+
+    <!-- External JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
